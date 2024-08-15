@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Title</title>
+</head>
+<body onload="calculator()">
+    <div class="container">
+        <h1 class="title">Калкулатор </h1>
+          <p>Въведете две числа</p><br>
+        <div class="input"> 
+            <label for="num1">Число едно</label> <br>
+            <input type="text" id="num1"> <br>
+            <label for="num2">Число две</label> <br>
+            <input type="text" id="num2"> <br>
+            <hr>
+            <label for="result">Резултат</label> <br>
+            <input type="text" id="result" readonly /><br>  
+        </div>
+        <br>
+        <button id="sumButton" onclick="calculate.add()">Събери</button> 
+        <button id="subtractButton" onclick="calculate.subtract()">Извади</button>   
+        <button id="multiplyButton" onclick="calculate.multiply()">Умножи</button> 
+        <button id="divisionButton" onclick="calculate.division()">Раздели</button> 
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
